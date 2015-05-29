@@ -144,9 +144,6 @@ for line in rawfile.readlines():
         print('----------------------------------------')
         print('%s' % y)
         output.write('@{@\"english\":@\"%s\",' % y)
-        c = rawfile1.readline()
-        c = c.replace('\n','')
-        output.write('@\"chinese\":@\"%s\",' % c)
         url1 = makeURL(y)
         response = requests.get(url1, headers=accessKey)
         """if 'error' in response.text:
