@@ -133,8 +133,8 @@ def parsing(root,output):
                                         output.write(',@\"teg%d\":@\"%s\"' %(b, c2.text))
                                 
                             
-rawfile = open('parsed.txt', 'r')
-rawfile1 = open('parsed.txt', 'r')
+rawfile = open('ori.txt', 'r')
+rawfile1 = open('ori.txt', 'r')
 counter = 0
 for line in rawfile.readlines():
     if counter == 0:
