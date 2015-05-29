@@ -7,7 +7,18 @@ url = 'https://dictionary.cambridge.org/api/v1/dictionaries/english-chinese-simp
 def makeURL(s):
     c = url + s + "&format=xml"
     return c
-accessKey = {'accessKey': 'BSnL6F6OMQuTL1izAQaNcikY0bNvXSMBFUIVulrUkYIzrDekpIbaF3dzhTcxgXDU'}
+
+
+
+################put your access key here#####################
+accessKey = {'accessKey': ''}
+################put your access key here#####################
+
+
+
+
+
+
 output = open('output.txt','w')
 output.write('@[')
 def parsing(root,output):
